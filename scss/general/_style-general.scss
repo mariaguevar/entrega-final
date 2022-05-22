@@ -1,0 +1,55 @@
+
+//header
+.nav-color {
+    background-color: #f3c4cc;
+
+    .nav-header {
+        .nav-logo {
+            font-family: 'Times New Roman', Times, serif;
+            color: #131012;
+            &:hover {
+                color: #f10086;
+            }
+        }
+
+        .color-text {
+            color: #131012;
+            &:hover {
+                color: #f10086;
+            }
+
+        }
+    }
+}
+
+//main
+
+.main {
+    background: rgb(255, 235, 235);
+    background: linear-gradient(90deg, rgba(255, 235, 235, 1) 0%, rgba(255, 221, 230, 1) 50%, rgba(252, 231, 232, 1) 100%);
+
+  .formulario{
+    .btn-color {
+        background-color: #131012;
+        
+    }
+
+  }
+    
+
+}
+
+
+//footer/
+.footer-container {
+    background-color: black;
+
+    .sitios-contacto{
+        .listas {
+            list-style: none;
+            color: white;
+        }
+
+    }
+    
+}

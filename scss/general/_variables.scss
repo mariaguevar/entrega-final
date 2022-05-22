@@ -1,0 +1,27 @@
+
+// mapas
+$main:(
+    color-letra: #f10086,
+    margin-top:30px,
+    padding: 5px,
+    text-decoration: underline,
+    padding-left: 3%,
+
+);
+
+//extend
+
+%flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+//mixin
+@mixin flex ($flex, $content, $direction){
+    display: $flex;
+    justify-content: $content;
+    flex-direction: $direction;
+}
+    
+

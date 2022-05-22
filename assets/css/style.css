@@ -1,0 +1,872 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.nav-color {
+  text-decoration: none;
+  position: fixed;
+  top: 0%;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.foto-container {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.foto-container .foto-inicio {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.foto-container .foto-inicio .foto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 3px 5px 10px black;
+  transition: all 0.3s ease-in-out;
+}
+.foto-container .foto-inicio .foto:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black;
+}
+.foto-container .foto-inicio .foto .titulo-secundario {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.foto-container .foto-inicio .foto .foto-img {
+  width: 350px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .banner-item {
+    margin-top: 60px;
+  }
+
+  .foto-inicio {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .foto-inicio .foto {
+    margin-top: 5%;
+    transition: none;
+    box-shadow: none;
+  }
+  .foto-inicio .foto .foto-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .banner-item {
+    margin-top: 64px;
+  }
+
+  .foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .foto-container .foto-inicio {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+  .foto-container .foto-inicio .foto-img {
+    width: 199px;
+    height: 160px;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*------- CONTENIDO PESTANAS-------*/
+.contenido-pestanas {
+  margin-top: 30px;
+}
+.contenido-pestanas .titulo-pestanas {
+  width: 90%;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  color: #f10086;
+  margin: auto;
+  padding: auto;
+}
+.contenido-pestanas .extension-pestanas {
+  text-align: left;
+  width: 80%;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-pestanas .extension-pestanas .extension {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-pestanas .lifting-pestanas {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-pestanas .lifting-pestanas .lifting {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-pestanas .perfilado-cejas {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-pestanas .perfilado-cejas .cejas {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-pestanas .perfilado-tine {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-pestanas .perfilado-tine .tinte {
+  color: #f10086;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .contenido-pestanas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .contenido-pestanas .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenido-pestanas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 23px;
+  }
+  .contenido-pestanas .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-depilacion, .contenido-pestanas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*--------- CONTENIDO DEPILACION---------*/
+.contenido-depilacion {
+  margin-top: 30px;
+}
+.contenido-depilacion .titulo-depilacion {
+  width: 90%;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  color: #f10086;
+  margin: auto;
+  padding: auto;
+}
+.contenido-depilacion .depilacion-cera {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-depilacion .depilacion-cera .cera {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-depilacion .depilacion-definitiva {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-depilacion .depilacion-definitiva .definitiva {
+  color: #f10086;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .contenido-depilacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .contenido-depilacion .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenido-depilacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 23px;
+  }
+  .contenido-depilacion .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-unas, .contenido-pestanas, .contenido-depilacion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*------- CONTENIDO UNAS ----------*/
+.contenido-unas {
+  margin-top: 30px;
+}
+.contenido-unas .titulo-unas {
+  width: 90%;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  color: #f10086;
+  margin: auto;
+  padding: auto;
+}
+.contenido-unas .unas-esculpidas {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-unas .unas-esculpidas .esculpidas {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-unas .pedicuria {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-unas .pedicuria .titulo-pedicure {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-unas .manucuria {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-unas .manucuria .manicuria-profunda {
+  color: #f10086;
+  text-decoration: underline;
+}
+.contenido-unas .permanente {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.contenido-unas .permanente .esmaltado-permanente {
+  color: #f10086;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .contenido-unas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .contenido-unas .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .contenido-unas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 23px;
+  }
+  .contenido-unas .div-titulo {
+    display: flex;
+    align-items: center;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-pestanas, .contenido-depilacion, .contenido-unas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ubicacion-contacto {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.ubicacion-contacto .titulo-contacto {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+.ubicacion-contacto .contacto-mapa {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  padding-right: 80px;
+}
+.ubicacion-contacto .formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .ubicacion-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ubicacion-contacto .titulo-contacto {
+    font-size: 18px;
+    margin-bottom: 380px;
+  }
+  .ubicacion-contacto .contacto-mapa {
+    display: none;
+  }
+  .ubicacion-contacto .formulario {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin: auto;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ubicacion-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .ubicacion-contacto .titulo-contacto {
+    font-size: 18px;
+    margin-bottom: 230px;
+  }
+  .ubicacion-contacto .contacto-mapa {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0%;
+  }
+  .ubicacion-contacto .contacto-mapa .mapa {
+    width: 350px;
+  }
+  .ubicacion-contacto .formulario {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-color {
+  background-color: #f3c4cc;
+}
+.nav-color .nav-header .nav-logo {
+  font-family: "Times New Roman", Times, serif;
+  color: #131012;
+}
+.nav-color .nav-header .nav-logo:hover {
+  color: #f10086;
+}
+.nav-color .nav-header .color-text {
+  color: #131012;
+}
+.nav-color .nav-header .color-text:hover {
+  color: #f10086;
+}
+
+.main {
+  background: rgb(255, 235, 235);
+  background: linear-gradient(90deg, rgb(255, 235, 235) 0%, rgb(255, 221, 230) 50%, rgb(252, 231, 232) 100%);
+}
+.main .formulario .btn-color {
+  background-color: #131012;
+}
+
+.footer-container {
+  background-color: black;
+}
+.footer-container .sitios-contacto .listas {
+  list-style: none;
+  color: white;
+}
+
+.contenido-pestanas, .contenido-depilacion, .contenido-unas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-container {
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 10% 10% 40% 10% 25% 5%;
+  grid-template-rows: 30% 40% 30%;
+  align-items: center;
+  font-size: 20px;
+}
+.footer-container .redes {
+  display: grid;
+  grid-column: 4/6;
+  grid-row: 3/1;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-container .redes .img {
+  width: 50px;
+  padding: 10px;
+  object-fit: cover;
+}
+.footer-container .redes .whatsapp-fijo {
+  background-position: center;
+  position: fixed;
+  top: 80%;
+  right: 30px;
+  bottom: 40px;
+  margin-top: 25px;
+}
+.footer-container .redes .whatsapp-fijo .img1 {
+  width: 50px;
+  padding-top: 50px;
+  object-fit: cover;
+}
+.footer-container .sitios-contacto {
+  display: grid;
+  grid-row: 3/2;
+  grid-column: 1/3;
+  position: relative;
+  margin-top: 40px;
+}
+.footer-container .sitios-contacto .listas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}
+.footer-container .sitios-contacto .listas .listas-img {
+  width: 8%;
+  height: 60%;
+  margin-right: 3%;
+  overflow: hidden;
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  .footer-container {
+    position: relative;
+    display: grid;
+    grid-column: 100%;
+    grid-template-rows: 100%;
+  }
+  .footer-container .redes {
+    display: grid;
+    grid-column: 3/6;
+  }
+  .footer-container .redes .whatsapp-fijo {
+    display: none;
+  }
+  .footer-container .sitios-contacto {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/1;
+  }
+  .footer-container .sitios-contacto .listas-img {
+    width: 25px;
+    height: 17px;
+  }
+}
+/* MEDIA QUERY DESKTOP Y TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-container {
+    position: relative;
+    display: grid;
+    grid-column: 100%;
+    grid-template-rows: 120px;
+  }
+  .footer-container .redes {
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 2/1;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container .redes .whatsapp-fijo {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer-container .sitios-contacto {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 3/1;
+  }
+  .footer-container .sitios-contacto .listas {
+    padding-top: 30px;
+  }
+  .footer-container .sitios-contacto .listas .listas-img {
+    width: 25px;
+    height: 17px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

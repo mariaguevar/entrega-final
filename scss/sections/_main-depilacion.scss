@@ -1,0 +1,83 @@
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general/variables";
+
+
+/*--------- CONTENIDO DEPILACION---------*/
+
+.contenido-depilacion {
+    @extend %flex;
+    margin-top: map-get($main, margin-top);
+
+    .titulo-depilacion {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: map-get($main, color-letra);
+        margin: auto;
+        padding: auto;
+    }
+
+    .depilacion-cera {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .cera {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+
+    .depilacion-definitiva {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .definitiva {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 260px) and (max-width:767px) {
+
+
+    .contenido-depilacion {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    .contenido-depilacion {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

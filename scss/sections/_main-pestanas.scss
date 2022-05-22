@@ -1,0 +1,109 @@
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general/variables";
+
+/*------- CONTENIDO PESTANAS-------*/
+
+.contenido-pestanas {
+    @extend %flex;
+    margin-top: map-get($main, margin-top);
+
+    .titulo-pestanas {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: map-get($main, color-letra);
+        margin: auto;
+        padding: auto;
+    }
+
+    .extension-pestanas {
+        text-align: left;
+        width: 80%;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .extension {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+
+    .lifting-pestanas {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .lifting {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+
+    .perfilado-cejas {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .cejas {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+
+    .perfilado-tine {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .tinte {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+
+}
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 260px) and (max-width:767px) {
+
+    .contenido-pestanas {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }   
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    
+
+    .contenido-pestanas {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

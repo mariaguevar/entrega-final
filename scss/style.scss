@@ -1,0 +1,24 @@
+//reset
+@import "./general/reset.scss";
+
+
+//style general
+@import "./general/style-general.scss";
+
+//Variables (mapas, extend, y mixin) 
+@import "./general/variables";
+
+//header
+@import "./sections/header";
+
+//main
+
+@import "./sections/main-index";
+@import "./sections/main-pestanas";
+@import "./sections/main-depilacion";
+@import "./sections/main-unas";
+@import "./sections/main-contacto";
+
+//footer
+
+@import "./sections/footer";

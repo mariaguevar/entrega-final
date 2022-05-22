@@ -1,0 +1,105 @@
+@import "../general/reset";
+@import "../general/style-general";
+@import "../general//variables";
+
+/*------- CONTENIDO UNAS ----------*/
+
+
+.contenido-unas {
+    @extend %flex;
+    margin-top: map-get($main, margin-top);
+
+    .titulo-unas {
+        width: 90%;
+        height: 40px;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        color: map-get($main, color-letra);
+        margin: auto;
+        padding: auto;
+    }
+
+    .unas-esculpidas {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .esculpidas {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+    .pedicuria {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .titulo-pedicure {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+    .manucuria {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .manicuria-profunda {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+    .permanente {
+        text-align: left;
+        padding-left: map-get($main, padding-left);
+        margin-top: map-get($main, margin-top);
+
+        .esmaltado-permanente {
+            color: map-get($main, color-letra);
+            text-decoration: map-get($main, text-decoration);
+        }
+    }
+
+}
+
+
+/* MEDIA QUERY CELULARES EN HORIZONTAL Y TABLETS PEQUEÑAS*/
+
+@media only screen and (min-width: 260px) and (max-width:767px) {
+
+
+    .contenido-unas {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 18px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+/* MEDIA QUERY DESKTOP Y TABLET */
+
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+
+    .contenido-unas {
+        @include flex (flex, center, column);
+        margin-bottom: 20px;
+        padding: map-get($main, padding);
+        font-size: 23px;
+
+        .div-titulo {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
