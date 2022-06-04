@@ -89,7 +89,7 @@
 /* MEDIA QUERY DESKTOP Y TABLET */
 
 
-@media only screen and (min-width:768px) and (max-width:1200px) {
+@media only screen and (min-width:768px) and (max-width:1280px) {
 
     .contenido-unas {
         @include flex (flex, center, column);
